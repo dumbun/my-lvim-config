@@ -1,0 +1,32 @@
+{
+  "name": "my-snippets",
+  "displayName": "Snippets",
+  "description": "Quick and easy snippets",
+  "version": "1.2.2",
+  "publisher": "vamshi krishna",
+  "homepage": "https://github.com/dumbun/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobertBrunhage/flutter-riverpod-snippets"
+  },
+  "keywords": [
+    "Flutter",
+    "Dart",
+    "Snippets",
+    "Riverpod"
+  ],
+  "engines": {
+    "vscode": "^1.62.3"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./riverpod_snippets.json"
+      }
+    ]
+  }
+}

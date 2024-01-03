@@ -1,0 +1,494 @@
+{
+  "Riverpod: AsyncNotifier class": {
+    "scope": "dart",
+    "prefix": "asyncNotifier",
+    "description": "Create an AsyncNotifier class",
+    "body": [
+      "class $1Notifier extends AsyncNotifier<$2> {",
+      "\t@override",
+      "\tFutureOr<$2> build() {",
+      "\t\treturn $3;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: Family AsyncNotifier class": {
+    "scope": "dart",
+    "prefix": "asyncNotifierFamily",
+    "description": "Create an AsyncNotifier with Family Parameter",
+    "body": [
+      "class $1Notifier extends FamilyAsyncNotifier<$2, $3> {",
+      "\t@override",
+      "\tFutureOr<$2> build($3 arg) {",
+      "\t\treturn $4;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: AsyncNotifier Provider": {
+    "scope": "dart",
+    "prefix": "asyncNotifierProvider",
+    "description": "Create an AsyncNotifierProvider",
+    "body": ["final $1Provider = AsyncNotifierProvider<$2, $3>($2.new);"]
+  },
+  "Riverpod: AsyncNotifier Provider with Family": {
+    "scope": "dart",
+    "prefix": "asyncNotifierProviderFamily",
+    "description": "Create an AsyncNotifierProvider with Family Modifier",
+    "body": [
+      "final $1Provider = AsyncNotifierProviderFamily<$2, $3, $4>($2.new);"
+    ]
+  },
+  "Change Notifier": {
+    "scope": "dart",
+    "prefix": "changeNotifier",
+    "description": "Create a ChangeNotifier with Editable Parameter",
+    "body": ["class $1Notifier extends ChangeNotifier {", "\t$2", "}"]
+  },
+  "Change Notifier Provider": {
+    "scope": "dart",
+    "prefix": "changeNotifierProvider",
+    "description": "Create a ChangeNotifierProvider",
+    "body": [
+      "final $1Provider = ChangeNotifierProvider<$2>((ref) {",
+      "\treturn $3;",
+      "});"
+    ]
+  },
+  "Change Notifier Provider with Family": {
+    "scope": "dart",
+    "prefix": "changeNotifierProviderFamily",
+    "description": "Create a ChangeNotifierProvider with Family modifier",
+    "body": [
+      "final $1Provider = ChangeNotifierProvider.family<$2, $3>((ref, $4) {",
+      "\treturn $5;",
+      "});"
+    ]
+  },
+  "Riverpod: part statement": {
+    "scope": "dart",
+    "prefix": "riverpodPart",
+    "description": "Create a part statement for Riverpod",
+    "body": ["part '${TM_FILENAME_BASE}.g.dart';"]
+  },
+  "Riverpod: simple instance": {
+    "scope": "dart",
+    "prefix": "riverpod",
+    "description": "Creates a simple Provider",
+    "body": [
+      "@riverpod",
+      "$1 $2(${2/(.*)/${1:/capitalize}/}Ref ref) {",
+      "\treturn $3;",
+      "}"
+    ]
+  },
+  "Riverpod: simple keep alive instance": {
+    "scope": "dart",
+    "prefix": "riverpodKeepAlive",
+    "description": "Creates a simple keep alive Provider",
+    "body": [
+      "@Riverpod(keepAlive: true)",
+      "$1 $2(${2/(.*)/${1:/capitalize}/}Ref ref) {",
+      "\treturn $3;",
+      "}"
+    ]
+  },
+  "Riverpod: future instance": {
+    "scope": "dart",
+    "prefix": "riverpodFuture",
+    "description": "Creates a FutureProvider",
+    "body": [
+      "@riverpod",
+      "FutureOr<$1> $2(${2/(.*)/${1:/capitalize}/}Ref ref) {",
+      "\treturn $3;",
+      "}"
+    ]
+  },
+  "Riverpod: keep alive future instance": {
+    "scope": "dart",
+    "prefix": "riverpodFutureKeepAlive",
+    "description": "Creates a keep alive FutureProvider",
+    "body": [
+      "@Riverpod(keepAlive: true)",
+      "FutureOr<$1> $2(${2/(.*)/${1:/capitalize}/}Ref ref) {",
+      "\treturn $3;",
+      "}"
+    ]
+  },
+  "Riverpod: stream instance": {
+    "scope": "dart",
+    "prefix": "riverpodStream",
+    "description": "Creates a StreamProvider",
+    "body": [
+      "@riverpod",
+      "Stream<$1> $2(${2/(.*)/${1:/capitalize}/}Ref ref) {",
+      "\treturn $3;",
+      "}"
+    ]
+  },
+  "Riverpod: keep alive stream instance": {
+    "scope": "dart",
+    "prefix": "riverpodStreamKeepAlive",
+    "description": "Creates a keep alive StreamProvider",
+    "body": [
+      "@Riverpod(keepAlive: true)",
+      "Stream<$1> $2(${2/(.*)/${1:/capitalize}/}Ref ref) {",
+      "\treturn $3;",
+      "}"
+    ]
+  },
+  "Riverpod: class": {
+    "scope": "dart",
+    "prefix": "riverpodClass",
+    "description": "Creates a class Provider",
+    "body": [
+      "@riverpod",
+      "class $1 extends _$$1 {",
+      "\t@override",
+      "\t$2 build() {",
+      "\t\treturn $3;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: keep alive class": {
+    "scope": "dart",
+    "prefix": "riverpodClassKeepAlive",
+    "description": "Creates a keep alive class Provider",
+    "body": [
+      "@Riverpod(keepAlive: true)",
+      "class $1 extends _$$1 {",
+      "\t@override",
+      "\t$2 build() {",
+      "\t\treturn $3;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: async class": {
+    "scope": "dart",
+    "prefix": "riverpodAsyncClass",
+    "description": "Creates an async class Provider",
+    "body": [
+      "@riverpod",
+      "class $1 extends _$$1 {",
+      "\t@override",
+      "\tFutureOr<$2> build() {",
+      "\t\treturn $3;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: keep alive async class": {
+    "scope": "dart",
+    "prefix": "riverpodAsyncClassKeepAlive",
+    "description": "Creates a keep alive async class Provider",
+    "body": [
+      "@Riverpod(keepAlive: true)",
+      "class $1 extends _$$1 {",
+      "\t@override",
+      "\tFutureOr<$2> build() {",
+      "\t\treturn $3;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: stream class": {
+    "scope": "dart",
+    "prefix": "riverpodStreamClass",
+    "description": "Creates an stream class Provider",
+    "body": [
+      "@riverpod",
+      "class $1 extends _$$1 {",
+      "\t@override",
+      "\tStream<$2> build() {",
+      "\t\treturn $3;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: keep alive stream class": {
+    "scope": "dart",
+    "prefix": "riverpodStreamClassKeepAlive",
+    "description": "Creates a keep alive stream class Provider",
+    "body": [
+      "@Riverpod(keepAlive: true)",
+      "class $1 extends _$$1 {",
+      "\t@override",
+      "\tStream<$2> build() {",
+      "\t\treturn $3;",
+      "\t}",
+      "}"
+    ]
+  },
+  "create provider": {
+    "scope": "dart",
+    "prefix": "consumer",
+    "body": [
+      "Consumer(",
+      "\tbuilder: (context, ref, child) {",
+      "\t\treturn $1;",
+      "\t},",
+      ")"
+    ],
+    "description": "Creates a consumer"
+  },
+  "Consumer Stateless": {
+    "scope": "dart",
+    "prefix": "stlessConsumer",
+    "description": "Create a ConsumerStatelessWidget",
+    "body": [
+      "class $1 extends ConsumerWidget {",
+      "\tconst $1({super.key});\n",
+      "\t@override",
+      "\tWidget build(BuildContext context, WidgetRef ref) {",
+      "\t\treturn Container();",
+      "\t}",
+      "}"
+    ]
+  },
+  "Consumer Stateful": {
+    "scope": "dart",
+    "prefix": "stfulConsumer",
+    "description": "Create a ConsumerStatefulWidget",
+    "body": [
+      "class $1 extends ConsumerStatefulWidget {",
+      "\tconst $1({super.key});\n",
+      "\t@override",
+      "\tConsumerState<ConsumerStatefulWidget> createState() => _$1State();",
+      "}\n",
+      "class _$1State extends ConsumerState<$1> {\n",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn Container();",
+      "\t}",
+      "}"
+    ]
+  },
+  "Future Provider": {
+    "scope": "dart",
+    "prefix": "futureProvider",
+    "description": "Create a FutureProvider",
+    "body": [
+      "final $1Provider = FutureProvider<$2>((ref) async {",
+      "\treturn $3;",
+      "});"
+    ]
+  },
+  "Future Provider with Family": {
+    "scope": "dart",
+    "prefix": "futureProviderFamily",
+    "description": "Create a FutureProvider with Family",
+    "body": [
+      "final $1Provider = FutureProvider.family<$2, $3>((ref, $4) async {",
+      "\treturn $5;",
+      "});"
+    ]
+  },
+  "Hook Consumer Stateless Widget": {
+    "scope": "dart",
+    "prefix": "stlessHookConsumer",
+    "description": "Create a HookConsumerWidget",
+    "body": [
+      "class $1 extends HookConsumerWidget {",
+      "\tconst $1({super.key});",
+
+      "\t@override",
+      "\tWidget build(BuildContext context, WidgetRef ref) {",
+      "\t\treturn Container();",
+      "\t}",
+      "}"
+    ]
+  },
+  "Hook Consumer Stateful Widget": {
+    "scope": "dart",
+    "prefix": "stfulHookConsumer",
+    "description": "Create a StatefulHookConsumerWidget",
+    "body": [
+      "class $1 extends StatefulHookConsumerWidget {",
+      "\tconst $1({super.key});\n",
+      "\t@override",
+      "\tConsumerState<ConsumerStatefulWidget> createState() => _$1State();",
+      "}",
+
+      "class _$1State extends ConsumerState<$1> {",
+
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn Container();",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: Notifier class": {
+    "scope": "dart",
+    "prefix": "notifier",
+    "description": "Create a Notifier class",
+    "body": [
+      "class $1Notifier extends Notifier<$2> {",
+      "\t@override",
+      "\t$2 build() {",
+      "\t\treturn $3;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: Family Notifier class": {
+    "scope": "dart",
+    "prefix": "notifierFamily",
+    "description": "Create a Notifier with Editable Parameter",
+    "body": [
+      "class $1Notifier extends FamilyNotifier<$2, $3> {",
+      "\t@override",
+      "\t$2 build($3 arg) {",
+      "\t\treturn $4;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: Notifier Provider": {
+    "scope": "dart",
+    "prefix": "notifierProvider",
+    "description": "Create a NotifierProvider",
+    "body": ["final $1Provider = NotifierProvider<$2, $3>($2.new);"]
+  },
+  "Riverpod: Notifier Provider with Family": {
+    "scope": "dart",
+    "prefix": "notifierProviderFamily",
+    "description": "Create a NotifierProvider with Family Modifier",
+    "body": ["final $1Provider = NotifierProviderFamily<$2, $3, $4>($2.new);"]
+  },
+  "Provider": {
+    "scope": "dart",
+    "prefix": "provider",
+    "description": "Create a simple Provider",
+    "body": ["final $1Provider = Provider<$2>((ref) {", "\treturn $3;", "});"]
+  },
+  "Provider with Family": {
+    "scope": "dart",
+    "prefix": "providerFamily",
+    "description": "Create a simple Provider with Family modifier",
+    "body": [
+      "final $1Provider = Provider.family<$2, $3>((ref, $4) {",
+      "\treturn $5;",
+      "});"
+    ]
+  },
+  "Provider Listenable": {
+    "scope": "dart",
+    "prefix": "listen",
+    "description": "Create a provider listenable",
+    "body": ["ref.listen<$1>($2, (previous, next) { ", "\t$3", "});"]
+  },
+  "State Notifier": {
+    "scope": "dart",
+    "prefix": "stateNotifier",
+    "description": "Create a StateNotifier with Editable Parameter",
+    "body": [
+      "class $1Notifier extends StateNotifier<$2> {",
+      "\t$1Notifier(): super($3);",
+      "\t$4",
+      "}"
+    ]
+  },
+  "State Notifier Provider": {
+    "scope": "dart",
+    "prefix": "stateNotifierProvider",
+    "description": "Create a StateNotifierProvider",
+    "body": [
+      "final $1Provider = StateNotifierProvider<$2>((ref) {",
+      "\treturn $3",
+      "});"
+    ]
+  },
+  "State Notifier Provider with Family": {
+    "scope": "dart",
+    "prefix": "stateNotifierProviderFamily",
+    "description": "Create a StateNotifierProvider with Family Modifier",
+    "body": [
+      "final $1Provider = StateNotifierProvider.family<$2, $3>((ref, $4) {",
+      "\treturn $5",
+      "});"
+    ]
+  },
+  "State Provider": {
+    "scope": "dart",
+    "prefix": "stateProvider",
+    "description": "Create a StateProvider",
+    "body": [
+      "final $1Provider = StateProvider<$2>((ref) {",
+      "\treturn $3;",
+      "});"
+    ]
+  },
+  "State Provider Family": {
+    "scope": "dart",
+    "prefix": "stateProviderFamily",
+    "description": "Create a StateProvider with Family modifier",
+    "body": [
+      "final $1Provider = StateProvider.family<$2, $3>((ref, $4) {",
+      "\treturn $5;",
+      "});"
+    ]
+  },
+  "Riverpod: StreamNotifier class": {
+    "scope": "dart",
+    "prefix": "streamNotifier",
+    "description": "Create an StreamNotifier class",
+    "body": [
+      "class $1Notifier extends StreamNotifier<$2> {",
+      "\t@override",
+      "\tStream<$2> build() {",
+      "\t\treturn $3;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: Family StreamNotifier class": {
+    "scope": "dart",
+    "prefix": "streamNotifierFamily",
+    "description": "Create an StreamNotifier with Family Parameter",
+    "body": [
+      "class $1Notifier extends FamilyStreamNotifier<$2, $3> {",
+      "\t@override",
+      "\tStream<$2> build($3 arg) {",
+      "\t\treturn $4;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Riverpod: StreamNotifier Provider": {
+    "scope": "dart",
+    "prefix": "streamNotifierProvider",
+    "description": "Create an StreamNotifierProvider",
+    "body": ["final $1Provider = StreamNotifierProvider<$2, $3>($2.new);"]
+  },
+  "Riverpod: StreamNotifier Provider with Family": {
+    "scope": "dart",
+    "prefix": "streamNotifierProviderFamily",
+    "description": "Create an StreamNotifierProvider with Family Modifier",
+    "body": [
+      "final $1Provider = StreamNotifierProviderFamily<$2, $3, $4>($2.new);"
+    ]
+  },
+  "Stream Provider": {
+    "scope": "dart",
+    "prefix": "streamProvider",
+    "description": "Create a StreamProvider",
+    "body": [
+      "final $1Provider = StreamProvider<$2>((ref) async* {",
+      "\treturn $3;",
+      "});"
+    ]
+  },
+  "Stream Provider Family": {
+    "scope": "dart",
+    "prefix": "streamProviderFamily",
+    "description": "Create a StreamProvider with Family modifier",
+    "body": [
+      "final $1Provider = StreamProvider.family<$2, $3>((ref, $4) async* {",
+      "\treturn $5;",
+      "});"
+    ]
+  }
+}
